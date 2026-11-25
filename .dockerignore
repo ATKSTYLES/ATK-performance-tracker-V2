@@ -1,0 +1,38 @@
+# Dependencies and build output (rebuilt inside Docker image via npm ci & npm run build)
+node_modules
+dist
+build
+coverage
+
+# Local persistent data, SQLite databases, and uploaded screenshots (never bake into image)
+data
+uploads
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+
+# Local environment secrets and keys (configure via Railway Variables instead)
+.env
+.env.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Private chat screenshots, backup archives, non-npm lockfiles, and workspace tooling
+public/assets/aistudio
+public/backups
+bun.lock
+bun.lockb
+.git
+.gitignore
+.aistudio
+*.log
+.DS_Store
+Thumbs.db

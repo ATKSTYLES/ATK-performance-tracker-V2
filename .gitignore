@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build & test outputs
+build/
+dist/
+coverage/
+
+# Local persistent trading data, SQLite databases, and uploaded screenshots
+data/
+uploads/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+
+# Environment files & private keys (never commit secrets)
+.env
+.env.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# AI Studio artifacts, private chat screenshots, and local backup archives
+.aistudio/
+public/assets/aistudio/
+public/backups/
+
+# Non-npm lockfiles & OS/log clutter
+bun.lock
+bun.lockb
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
